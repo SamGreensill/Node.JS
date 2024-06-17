@@ -25,7 +25,7 @@ async function displayNotes() {
         },
         handler: function(argv) {
             console.log('Title: ' + argv.title)
-            console.log('Body: ' + argv.body)
+            console.log('Body: ' + argv.body) //These both allow prints 
         }
     });
 
