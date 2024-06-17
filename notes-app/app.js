@@ -5,8 +5,12 @@ async function displayNotes() {
     const msg = getNotes();
     console.log(msg);
 
-    const greenMsg = chalk.red.bold('Error!');
+    const greenMsg = chalk.blue.bold('Success');
     console.log(greenMsg);
+
+    console.log(process.argv)
 }
+
+
 
 displayNotes();
