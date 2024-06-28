@@ -1,7 +1,7 @@
 async function displayNotes() {
     const chalk = (await import('chalk')).default;
     const yargs = require('yargs');
-    const getNotes = (await import('./notes.js')).default;
+    const notes = (await import('./notes.js')).default;
 
     // Customize yargs version 
     yargs.version('1.1.0');
@@ -24,8 +24,7 @@ async function displayNotes() {
             }
         },
         handler: function(argv) {
-            console.log('Title: ' + argv.title)
-            console.log('Body: ' + argv.body) //These both allow prints 
+         notes.addNote(argv.title, argv.body)
         }
     });
 
