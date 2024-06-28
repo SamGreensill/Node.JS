@@ -1,10 +1,4 @@
-<<<<<<< Updated upstream
-function getNotes() {
-    return 'Your notes...';
-}
 
-module.exports = getNotes;
-=======
 const fs = require('fs');
 
 const getNotes = function () {
@@ -88,4 +82,3 @@ module.exports = {
     listNotes: listNotes,
     readNote: readNote
 }
->>>>>>> Stashed changes
